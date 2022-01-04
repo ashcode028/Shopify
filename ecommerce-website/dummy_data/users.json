@@ -1,0 +1,55 @@
+[
+  {
+    "phone_number": "9171234567",
+    "password": "Shopify@8769",
+    "email": "admin@gmail.com",
+    "is_admin": true,
+    "user_type": "Admin",
+    "isAuthenticated": true
+  },
+  {
+    "phone_number": "9177654321",
+    "password": "Whatthe$97",
+    "first_name": "Johnny",
+    "last_name": "Lever",
+    "email": "johnny@gmail.com",
+    "national_code": "181202",
+    "pay_balance": "30060",
+    "user_type": "Seller",
+    "isAuthenticated": true
+  },
+  {
+    "phone_number": "9175559999",
+    "password": "Aman$890",
+    "first_name": "Arun",
+    "last_name": "Balaji",
+    "email": "arun@yahoo.com",
+    "pay_balance": "10560",
+    "user_type": "Seller",
+    "isAuthenticated": true
+  },
+  {
+    "phone_number": "9172589875",
+    "password": "Chaman@1456",
+    "first_name": "Jatin",
+    "last_name": "Sharma",
+    "user_type": "Buyer",
+    "isAuthenticated": true
+  },
+  {
+    "phone_number": "9180596836",
+    "password": "Kyakaru&4978",
+    "first_name": "Ajeet",
+    "last_name": "Yadav",
+    "user_type": "Buyer",
+    "isAuthenticated": true
+  },
+  {
+    "phone_number": "9971234567",
+    "password": "shopIfY#5798",
+    "email": "apnashopifyapp@gmail.com",
+    "is_admin": true,
+    "user_type": "Admin",
+    "isAuthenticated": true
+  }
+]

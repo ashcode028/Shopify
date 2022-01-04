@@ -1,0 +1,42 @@
+[
+    {
+        "user": 1,
+        "date":"16 Mar, 2019",
+        "Name":"Elvis Presley",
+        "Ship To":"Tupelo, MS",
+        "Payment Method":"Card",
+        "Sale Amount": 312.44
+    },
+    {
+        "user": 2,
+        "date":"16 Mar, 2019",
+        "Name":"Paul Presley",
+        "Ship To":"Tupelo, Mxicp",
+        "Payment Method":"Cash On Delivery",
+        "Sale Amount": 866.99
+    },
+    {
+        "user": 2,
+        "date":"16 Mar, 2019",
+        "Name":"Tom Scholor",
+        "Ship To":"Saket, Delhi",
+        "Payment Method":"Cash On Delivery",
+        "Sale Amount": 100.81
+    },
+    {
+        "user": 1,
+        "date":"16 Mar, 2019",
+        "Name":"Michel Scholor",
+        "Ship To":"Uttarakhand",
+        "Payment Method":"Card",
+        "Sale Amount": 600.89
+    },
+    {
+        "user": 1,
+        "date":"15 Mar, 2020",
+        "Name":"Michel Bruce",
+        "Ship To":"Kerala",
+        "Payment Method":"Cash On Delivery",
+        "Sale Amount": 200.89
+    }
+  ]
