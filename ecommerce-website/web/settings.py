@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'django_otp',
     'django_otp.plugins.otp_totp',
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -65,7 +65,7 @@ MIDDLEWARE = [
     'django_otp.middleware.OTPMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'livereload.middleware.LiveReloadScript',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'web.urls'
