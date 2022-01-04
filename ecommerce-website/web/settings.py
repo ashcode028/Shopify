@@ -12,7 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import json
-
+import django_heroku
+import dj_database_url
 # with open('/etc/config.json') as config_file:
 # 	config=json.load(config_file)
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -52,6 +53,7 @@ INSTALLED_APPS = [
     'django_rest_passwordreset',
     'django_otp',
     'django_otp.plugins.otp_totp',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +66,7 @@ MIDDLEWARE = [
     'django_otp.middleware.OTPMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'livereload.middleware.LiveReloadScript',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'web.urls'
@@ -99,6 +102,7 @@ DATABASES = {
     #     "HOST": os.environ.get("SQL_HOST", "0.0.0.0"),
     #     "PORT": os.environ.get("SQL_PORT", "3306"),
     # }
+    
     "default": {
         "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
         "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
@@ -149,7 +153,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'dist/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Media files
 
@@ -214,3 +218,4 @@ try:
 except ImportError:
     pass
 
+django_heroku.settings(locals())
