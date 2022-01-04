@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import json
-import django_heroku
+# import django_heroku
 import dj_database_url
 # with open('/etc/config.json') as config_file:
 # 	config=json.load(config_file)
@@ -102,15 +102,15 @@ DATABASES = {
     #     "PORT": os.environ.get("SQL_PORT", "3306"),
     # }
 
-    # "default": {
-    #     "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
-    #     "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
-    #     "USER": os.environ.get("SQL_USER", "user"),
-    #     "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
-    #     "HOST": os.environ.get("SQL_HOST", "localhost"),
-    #     "PORT": os.environ.get("SQL_PORT", "5432"),
-    # }
-    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
+    "default": {
+        "ENGINE": os.environ.get("SQL_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.environ.get("SQL_DATABASE", os.path.join(BASE_DIR, "db.sqlite3")),
+        "USER": os.environ.get("SQL_USER", "user"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "password"),
+        "HOST": os.environ.get("SQL_HOST", "localhost"),
+        "PORT": os.environ.get("SQL_PORT", "5432"),
+    }
+    # 'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
 
 
@@ -212,7 +212,7 @@ SECURE_CONTENT_TYPE_NOSNIFF= True
 # DENY CLICKJACKING ATTACK
 X_FRAME_OPTIONS = 'DENY'
 # Local settings for production
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 try:
     from local_settings import *
 except ImportError:
