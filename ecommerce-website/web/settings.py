@@ -24,8 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", default="foo")
-# SECRET_KEY=config['SECRET_KEY']
+# SECRET_KEY =
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = int(os.environ.get("DEBUG", default=1))
 
@@ -213,10 +212,9 @@ SECURE_CONTENT_TYPE_NOSNIFF= True
 # DENY CLICKJACKING ATTACK
 X_FRAME_OPTIONS = 'DENY'
 # Local settings for production
-
+django_heroku.settings(locals())
 try:
     from local_settings import *
 except ImportError:
     pass
 
-django_heroku.settings(locals())
