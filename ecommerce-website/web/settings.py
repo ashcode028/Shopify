@@ -188,18 +188,18 @@ LOGIN_REDIRECT_URL = '/login'
 OTP_ADMIN_HIDE_SENSITIVE_DATA = True
 # OTP_EMAIL_THROTTLE_FACTOR = 300
 # OTP_TOTP_THROTTLE_FACTOR = False
-# CSRF token
-CSRF_COOKIE_NAME = "XSRF-TOKEN"
+# # CSRF token
+# CSRF_COOKIE_NAME = "XSRF-TOKEN"
 
-SECURE_REFERRER_POLICY ='strict-origin'
+# SECURE_REFERRER_POLICY ='strict-origin'
 
-# prevents xss attack
-SECURE_BROWSER_XSS_FILTER = True
+# # prevents xss attack
+# SECURE_BROWSER_XSS_FILTER = True
 
-# Secure cookies
-SESSION_COOKIE_SECURE = True
-# CSRF Cookie Secure
-CSRF_COOKIE_SECURE = True
+# # Secure cookies
+# SESSION_COOKIE_SECURE = True
+# # CSRF Cookie Secure
+# CSRF_COOKIE_SECURE = True
 
 # to https only
 # SECURE_HSTS_SECONDS=31536999
@@ -207,10 +207,10 @@ CSRF_COOKIE_SECURE = True
 # SECURE_HSTS_PRELOAD=True
 # SECURE_SSL_REDIRECT = True
 
-SECURE_CONTENT_TYPE_NOSNIFF= True
+# SECURE_CONTENT_TYPE_NOSNIFF= True
 
 # DENY CLICKJACKING ATTACK
-X_FRAME_OPTIONS = 'DENY'
+# X_FRAME_OPTIONS = 'DENY'
 # Local settings for production
 # django_heroku.settings(locals())
 try:
