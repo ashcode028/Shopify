@@ -38,5 +38,5 @@ We decided about suitable access rights/ privileges and other  security features
   - __OTP__: The secure e-commerce website must employ OTP (One Time  Password) technique with virtual keyboard feature to validate highly sensitive  transactions for at least two of the functions in requirements. You may decide the  extent of the OTP applicability to the functions.  
   - This website allows multiple users to use the  system simultaneously. 
   - Secure transaction logging is required to enable external audits. 
-  - Must employ necessary security features to defend against attacks on the secure  e-commerce website (project will be tested by the TAs and students).
-  - Make sure you read about payment gateway compliance and store only the data that is allowed to be stored. For example, storing card details on your local db store is not allowed. 
+  - Must employ necessary security features to defend against attacks on the secure  e-commerce website (project has be tested by the TAs and students).
+  - We made sure to read about payment gateway compliance and store only the data that is allowed to be stored. For example, storing card details on your local db store is not allowed. 
